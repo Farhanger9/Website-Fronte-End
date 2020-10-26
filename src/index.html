@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta
+      content="width=device-width, initial-scale=1"
+      name="viewport"
+      charset="utf-8"
+    />
+
+    <title>WEB222 Store</title>
+    <script src="https://use.fontawesome.com/69878349a4.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+  </head>
+
+  <body>
+    <!-- The header Section-->
+    <header id="header_section">
+      <!-- The logo section-->
+      <section id="left_header">
+        <article id="logo">
+          <a href="index.html"><div id="logo_image"></div></a>
+        </article>
+      </section>
+      <!-- The Name and store information area-->
+      <section id="center_header">
+        <article id="store_name">
+          <h1>Farhang FastStore</h1>
+        </article>
+        <section id="store_info">
+          <p>
+            Farhang FastStore is an online store, specialized in distributing
+            shores at an affordable price and with home delivery services
+          </p>
+          <article id="contact_link">
+            <a href="contact.html">Contact Us</a>
+          </article>
+        </section>
+      </section>
+      <!--Image on the header section-->
+      <section id="right_header"></section>
+    </header>
+    <!-- The main container -->
+    <div id="main_container">
+      <!-- The sidebar categories-->
+      <section id="sidebar">
+        <h3>Categories</h3>
+        <ul>
+          <li id="all_shoes" onclick="category('all')">All</li>
+          <li id="women_shoes" onclick="category('women')">Women's Shoes</li>
+          <li id="men_shoes" onclick="category('men')">Men's Shoes</li>
+        </ul>
+        <ul>
+          <li>
+            Max
+            <input
+              type="number"
+              id="max_price"
+              onkeyup="priceFilter()"
+              value="2000"
+            />
+          </li>
+          <li>
+            Min
+            <input
+              type="number"
+              id="min_price"
+              onkeyup="priceFilter()"
+              value="0"
+            />
+          </li>
+        </ul>
+      </section>
+      <!-- The main panel-->
+      <section id="main_panel">
+        <!--Item card-->
+        <article class="item_card men">
+          <div
+            class="item_image"
+            style="background-image: url('images/1-2-shoes-png.png');"
+          >
+            
+          </div>
+          <div class="item_info">
+            <div class="name_price">
+              <div class="item_name">
+                <h4>MS-N° 11</h4>
+              </div>
+              <div class="item_price">
+                <h4>Price: $<strong class="price">1000</strong></h4>
+              </div>
+            </div>
+            <div class="cat_desc">
+              <h5 class="item_cat">Category: Men</h5>
+              <p class="item_desc">
+                A particularly high level of flexibility and a modern design turn this men's into an extremely 
+                comfortable companion with that certain something extra. 
+                Its extraordinarily flexible rubber outsole and embossed nubuck leather are the basis for its 
+                premium quality.
+              </p>
+            </div>
+          </div>
+        </article>
+        <!--Item card-->
+        <article class="item_card men">
+          <div
+            class="item_image"
+            style="background-image: url('images/5-2-shoes-png-picture.png');"
+          >
+            
+          </div>
+          <div class="item_info">
+            <div class="name_price">
+              <div class="item_name">
+                <h4>MS-N° 12</h4>
+              </div>
+              <div class="item_price">
+                <h4>Price: $<strong class="price">4</strong></h4>
+              </div>
+            </div>
+            <div class="cat_desc">
+              <h5 class="item_cat">Category: Men</h5>
+              <p class="item_desc">
+                Allow us to introduce the oldest and most elegant men’s shoe in the world: the classic plain Oxford in black. 
+                Oxford shoes get their elegance from shoelace eyelet tabs that are stitched underneath the vamp.
+              </p>
+            </div>
+          </div>
+        </article>
+        <!--Item card-->
+        <article class="item_card men">
+          <div
+            class="item_image"
+            style="background-image: url('images/6-2-shoes-png-file.png');"
+          >
+            
+          </div>
+          <div class="item_info">
+            <div class="name_price">
+              <div class="item_name">
+                <h4>MS-N° 13</h4>
+              </div>
+              <div class="item_price">
+                <h4>Price: $<strong class="price">200</strong></h4>
+              </div>
+            </div>
+            <div class="cat_desc">
+              <h5 class="item_cat">Category: Men</h5>
+              <p class="item_desc">
+                Allow us to introduce the formal dress shoe for brown-tie events –
+                 the Goodyear-welted patent shoe in black.
+              </p>
+            </div>
+          </div>
+        </article>
+        <!--Item card-->
+        <article class="item_card men">
+          <div
+            class="item_image"
+            style="
+              background-image: url('images/7-2-shoes-free-png-image.png');
+            "
+          >
+        
+          </div>
+          <div class="item_info">
+            <div class="name_price">
+              <div class="item_name">
+                <h4>MS-N° 14</h4>
+              </div>
+              <div class="item_price">
+                <h4>Price: $<strong class="price">140</strong></h4>
+              </div>
+            </div>
+            <div class="cat_desc">
+              <h5 class="item_cat">Category: Men</h5>
+              <p class="item_desc">
+                Stylish trainer from in white and blue. This handcrafted shoe was made using a roomy last and 
+                features a lightweight synthetic sole to ensure extraordinary wearing comfort.
+              </p>
+            </div>
+          </div>
+        </article>
+        <!--Item card-->
+        <article class="item_card women">
+          <div
+            class="item_image"
+            style="background-image: url('images/7-women-shoes-png-image.png');"
+          >
+            
+          </div>
+          <div class="item_info">
+            <div class="name_price">
+              <div class="item_name">
+                <h4>WN-N° 11</h4>
+              </div>
+              <div class="item_price">
+                <h4>Price: $<strong class="price">80</strong></h4>
+              </div>
+            </div>
+            <div class="cat_desc">
+              <h5 class="item_cat">Category: WOmen</h5>
+              <p class="item_desc">
+                This handcrafted women’s pump exudes the flair of the 70s. 
+                The shaft is made from matte-finished calfskin with a supple feel. 
+              </p>
+            </div>
+          </div>
+        </article>
+        <!--Item card-->
+        <article class="item_card men">
+          <div
+            class="item_image"
+            style="background-image: url('images/8-2-shoes-picture.png');"
+          >
+           
+          </div>
+          <div class="item_info">
+            <div class="name_price">
+              <div class="item_name">
+                <h4>MS-N° 15</h4>
+              </div>
+              <div class="item_price">
+                <h4>Price: $<strong class="price">60</strong></h4>
+              </div>
+            </div>
+            <div class="cat_desc">
+              <h5 class="item_cat">Category: Men</h5>
+              <p class="item_desc">
+                North America meets Scandinavia: elegant brown men’s penny loafers, made using Norwegian lasts.
+              </p>
+            </div>
+          </div>
+        </article>
+        <!--Item card-->
+        <article class="item_card women">
+          <div
+            class="item_image"
+            style="background-image: url('images/8-women-shoes-png-image.png');"
+          >
+            
+          </div>
+          <div class="item_info">
+            <div class="name_price">
+              <div class="item_name">
+                <h4>WN-N° 12</h4>
+              </div>
+              <div class="item_price">
+                <h4>Price: $<strong class="price">500</strong></h4>
+              </div>
+            </div>
+            <div class="cat_desc">
+              <h5 class="item_cat">Category: Women</h5>
+              <p class="item_desc">
+                This Goodyear-welted double monk strap for women captivates with its striking appearance
+                . Monk straps are already considered extravagant, and thanks to detailed broguing, 
+              </p>
+            </div>
+          </div>
+        </article>
+        <!--Item card-->
+        <article class="item_card women">
+          <div
+            class="item_image"
+            style="background-image: url('images/1-women-shoes-png-image.png');"
+          >
+           
+          </div>
+          <div class="item_info">
+            <div class="name_price">
+              <div class="item_name">
+                <h4>WN-N° 13</h4>
+              </div>
+              <div class="item_price">
+                <h4>Price: $<strong class="price">100</strong></h4>
+              </div>
+            </div>
+            <div class="cat_desc">
+              <h5 class="item_cat">Category: Women</h5>
+              <p class="item_desc">
+                This cognac heeled penny loafer oozes American charm. 
+                The shaft of this Goodyear-welted shoe has been made from the finest calfskin
+              </p>
+            </div>
+          </div>
+        </article>
+        <!--Item card-->
+        <article class="item_card women">
+          <div
+            class="item_image"
+            style="background-image: url('images/9-women-shoes-png-image.png');"
+          >
+         
+          </div>
+          <div class="item_info">
+            <div class="name_price">
+              <div class="item_name">
+                <h4>WN-N° 14</h4>
+              </div>
+              <div class="item_price">
+                <h4>Price: $<strong class="price">80</strong></h4>
+              </div>
+            </div>
+            <div class="cat_desc">
+              <h5 class="item_cat">Category: Women</h5>
+              <p class="item_desc">
+                Always fashionable, yet keeping your feet on the ground.
+                These patent pumps with a 5.5 cm kitten heel are the ideal companion for the office, 
+                with an elegant dress or to be paired with a relaxed casual look.
+              </p>
+            </div>
+          </div>
+        </article>
+        <!--Item card-->
+        <article class="item_card women">
+          <div
+            class="item_image"
+            style="background-image: url('images/15-women-shoes-png-image.png');"
+          >
+         
+          </div>
+          <div class="item_info">
+            <div class="name_price">
+              <div class="item_name">
+                <h4>WN-N° 15</h4>
+              </div>
+              <div class="item_price">
+                <h4>Price: $<strong class="price">25</strong></h4>
+              </div>
+            </div>
+            <div class="cat_desc">
+              <h5 class="item_cat">Category: Women</h5>
+              <p class="item_desc">
+                Be the main attraction donning these women's BCBGeneration Kathleen red evening pumps. 
+                Comprising a suede upper with an elegant midfoot and an elongated strap that ends in a slingback, 
+                these dress pumps have flexible elastic gore, pointed toe front, signature detailed footbed and unique 
+                supportive heel.
+              </p>
+            </div>
+          </div>
+        </article>
+        <!--Item card-->
+        <article class="item_card men">
+          <div
+            class="item_image"
+            style=" background-image: url('images/4-2-shoes-free-download-png-thumb.png');"
+          >
+           
+          </div>
+          <div class="item_info">
+            <div class="name_price">
+              <div class="item_name">
+                <h4>MS-N° 16</h4>
+              </div>
+              <div class="item_price">
+                <h4>Price: $<strong class="price">35</strong></h4>
+              </div>
+            </div>
+            <div class="cat_desc">
+              <h5 class="item_cat">Category: Men</h5>
+              <p class="item_desc">
+                Comfort his every step with these stylish man's running shoes. 
+                Built using a lightweight and breathable mesh upper along with stabilizing
+                 overlays, these athletic shoes have a secure lace-up closure, a
+                  cushioned EVA midsole, and a durable rubber outsole for enhanced flexibility.
+              </p>
+            </div>
+          </div>
+        </article>
+        <!--Item card-->
+        <article class="item_card women">
+          <div
+            class="item_image"
+            style="
+              background-image: url('images/12-pink-women-shoes-png-image.png');
+            "
+          >
+           
+          </div>
+          <div class="item_info">
+            <div class="name_price">
+              <div class="item_name">
+                <h4>WN-N° 16</h4>
+              </div>
+              <div class="item_price">
+                <h4>Price: $<strong class="price">40</strong></h4>
+              </div>
+            </div>
+            <div class="cat_desc">
+              <h5 class="item_cat">Category: Women</h5>
+              <p class="item_desc">
+                This marvelous pair is fashioned with a textural snake print and rhinestone 
+                embellishments for the right amount of shimmer and shine!
+              </p>
+            </div>
+          </div>
+        </article>
+      </section>
+    </div>
+
+    <footer>
+      <a href="#header_section">
+        <h2>Farhang FastStore</h2>
+      </a>
+      <div>
+        <section>
+          <article>
+            <a href="" target="_blank" rel="noopener noreferrer">
+              <i class="fa fa-facebook-official" aria-hidden="true"></i>
+              <p>Facebook</p>
+            </a>
+          </article>
+          <article>
+            <a href="" target="_blank" rel="noopener noreferrer">
+              <i class="fa fa-twitter-square" aria-hidden="true"></i>
+              <p>Twitter</p>
+            </a>
+          </article>
+          <article>
+            <a
+              href="https://www.instagram.com/farhanger9/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="fa fa-instagram" aria-hidden="true"></i>
+              <p>Instagram</p>
+            </a>
+          </article>
+        </section>
+        <section id="subscription_form">
+          <form action="https://formspree.io/xqkyngpr" method="POST">
+            <label for="email">Subscribe</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Your email address.."
+            />
+            <input type="submit" value="Submit" />
+          </form>
+        </section>
+      </div>
+      <div class="site-info">
+        Copyright 2020. Designed by
+        <a
+          style="color: #586bb7;"
+          target="_blank"
+          href="https://www.instagram.com/farhanger9/"
+        >
+          Farhang Einifar</a
+        >
+      </div>
+    </footer>
+  </body>
+</html>
